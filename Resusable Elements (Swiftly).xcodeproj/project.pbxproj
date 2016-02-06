@@ -12,6 +12,9 @@
 		33FE514A1C6578A5007CFB1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33FE51481C6578A5007CFB1C /* Main.storyboard */; };
 		33FE514C1C6578A5007CFB1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33FE514B1C6578A5007CFB1C /* Assets.xcassets */; };
 		33FE514F1C6578A5007CFB1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33FE514D1C6578A5007CFB1C /* LaunchScreen.storyboard */; };
+		33FE51581C65794F007CFB1C /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FE51571C65794F007CFB1C /* KeyboardView.swift */; };
+		33FE515A1C657984007CFB1C /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33FE51591C657984007CFB1C /* KeyboardView.xib */; };
+		33FE515D1C658050007CFB1C /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FE515C1C658050007CFB1C /* CircleButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		33FE514B1C6578A5007CFB1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33FE514E1C6578A5007CFB1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33FE51501C6578A5007CFB1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33FE51571C65794F007CFB1C /* KeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyboardView.swift; path = ../KeyboardView.swift; sourceTree = "<group>"; };
+		33FE51591C657984007CFB1C /* KeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardView.xib; sourceTree = "<group>"; };
+		33FE515C1C658050007CFB1C /* CircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,33 @@
 		33FE51431C6578A5007CFB1C /* Resusable Elements (Swiftly) */ = {
 			isa = PBXGroup;
 			children = (
-				33FE51441C6578A5007CFB1C /* AppDelegate.swift */,
+				33FE515B1C658017007CFB1C /* Button_Asthetic */,
+				33FE51561C65790E007CFB1C /* Keyboard */,
 				33FE51461C6578A5007CFB1C /* ViewController.swift */,
+				33FE51441C6578A5007CFB1C /* AppDelegate.swift */,
 				33FE51481C6578A5007CFB1C /* Main.storyboard */,
 				33FE514B1C6578A5007CFB1C /* Assets.xcassets */,
 				33FE514D1C6578A5007CFB1C /* LaunchScreen.storyboard */,
 				33FE51501C6578A5007CFB1C /* Info.plist */,
 			);
 			path = "Resusable Elements (Swiftly)";
+			sourceTree = "<group>";
+		};
+		33FE51561C65790E007CFB1C /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				33FE51571C65794F007CFB1C /* KeyboardView.swift */,
+				33FE51591C657984007CFB1C /* KeyboardView.xib */,
+			);
+			name = Keyboard;
+			sourceTree = "<group>";
+		};
+		33FE515B1C658017007CFB1C /* Button_Asthetic */ = {
+			isa = PBXGroup;
+			children = (
+				33FE515C1C658050007CFB1C /* CircleButton.swift */,
+			);
+			name = Button_Asthetic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33FE514F1C6578A5007CFB1C /* LaunchScreen.storyboard in Resources */,
+				33FE515A1C657984007CFB1C /* KeyboardView.xib in Resources */,
 				33FE514C1C6578A5007CFB1C /* Assets.xcassets in Resources */,
 				33FE514A1C6578A5007CFB1C /* Main.storyboard in Resources */,
 			);
@@ -135,8 +161,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33FE51581C65794F007CFB1C /* KeyboardView.swift in Sources */,
 				33FE51471C6578A5007CFB1C /* ViewController.swift in Sources */,
 				33FE51451C6578A5007CFB1C /* AppDelegate.swift in Sources */,
+				33FE515D1C658050007CFB1C /* CircleButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

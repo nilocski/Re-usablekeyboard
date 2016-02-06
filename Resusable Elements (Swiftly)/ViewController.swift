@@ -8,11 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, KeyboardViewDelegate {
 
+    @IBOutlet var labelResults: UILabel!
+    
+    @IBOutlet weak var keyboardView:KeyboardView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.keyboardView.delegate = self
+    
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +26,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    func keyboardButtonTapped(buttonNumber: NSInteger) {
+        self.labelResults.text = String(buttonNumber)
+    }
 }
 
